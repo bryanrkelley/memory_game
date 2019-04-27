@@ -12,6 +12,7 @@ function Header() {
             <p>Input your own train schedule and watch the page dynamically update!</p>
 
             <a class="btn btn-primary btn-lg" href="https://bryanrkelley.github.io/Basic-Portfolio/" role="button"
+                // eslint-disable-next-line react/jsx-no-target-blank
                 target="_blank">Main Page</a>
         </div>
     </div>
