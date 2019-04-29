@@ -1,8 +1,10 @@
 import React from "react";
+import "./style.css";
+
 
 const FriendCard = props => (
   <div 
-    className="card" 
+    className="card flex" 
     value={props.id} 
     onClick={() => props.handleClick(props.id)}
   >

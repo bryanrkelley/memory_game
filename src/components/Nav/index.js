@@ -5,7 +5,7 @@ const Nav = props => (
   <nav>
     <ul>
       <li className="brand animated lightSpeedIn">
-        <a href="/simpsons-react-clicky/">{props.title}</a>
+        <a href="/drag-react-clicky/">{props.title}</a>
       </li>
 
       <li id="rw">{props.rightWrong}</li>

@@ -60,23 +60,23 @@
       "clicked": false
     }, 
     {
-        "id": 13,
-        "image": "http://www.rifemagazine.co.uk/wp-content/uploads/2016/01/meth_2.jpg",
-        "clicked": false
+      "id": 13,
+      "image": "http://www.rifemagazine.co.uk/wp-content/uploads/2016/01/meth_2.jpg",
+      "clicked": false
     },  
     {
-        "id": 14,
-        "image": "https://imgix.bustle.com/uploads/getty/2017/9/11/0e361492-5ae7-481f-8d57-689f0936e13a-getty-531808968.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70",
-        "clicked": false
+      "id": 14,
+      "image": "https://imgix.bustle.com/uploads/getty/2017/9/11/0e361492-5ae7-481f-8d57-689f0936e13a-getty-531808968.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70",
+      "clicked": false
     },   
     {
-        "id": 15,
-        "image": "https://cdn.theatlantic.com/assets/media/img/mt/2016/05/Kim_Chi/lead_720_405.jpg?mod=1533691823",
-        "clicked": false
+      "id": 15,
+      "image": "https://cdn.theatlantic.com/assets/media/img/mt/2016/05/Kim_Chi/lead_720_405.jpg?mod=1533691823",
+      "clicked": false
     },    
     {
-        "id": 16,
-        "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/08/08/17/vicky-voxlsh.jpg?w968h681",
-        "clicked": false
+      "id": 16,
+      "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/08/08/17/vicky-voxlsh.jpg?w968h681",
+      "clicked": false
     }
   ]

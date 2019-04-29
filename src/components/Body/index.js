@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
-
 import FriendCard from "../FriendCard";
 import Nav from "../Nav";
-
 import friends from "../../friends.json";
 
 
@@ -16,8 +14,8 @@ function randomizePictures(array) {
   return array;
 };
 
-class App extends Component {
-  // Set this.state
+class Body extends Component {
+  //Set this.state
   state = {
     friends,
     currentScore: 0,
@@ -54,7 +52,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "Glaven!",
+      rightWrong: "Sashay away!",
       clicked: []
     });
     this.handleShuffle();
@@ -64,44 +62,38 @@ class App extends Component {
     let randomizedPictures = randomizePictures(friends);
     this.setState({ friends: randomizedPictures });
   };
+
+  render () {
+    return (
+      <div className="row">
+        <div className="col-xs-12 col-sm-12">
+            <div className="panel panel-default">
+  
+              <Nav
+              title="Drag Queen Clicky Game"
+              score={this.state.currentScore}
+              topScore={this.state.topScore}
+              rightWrong={this.state.rightWrong}
+              />
+  
+
+  
+              {this.state.friends.map(friend => (
+                  <FriendCard
+                    key={friend.id}
+                    handleClick={this.handleClick}
+                    handleIncrement={this.handleIncrement}
+                    handleReset={this.handleReset}
+                    handleShuffle={this.handleShuffle}
+                    id={friend.id}
+                    image={friend.image}
+                  />
+              ))}
+            </div>
+        </div>
+    </div>
+    )
+  }
 }
 
-new App();
-
-
-function Card() {
-  return (
-    <div className="row">
-      <div className="col-xs-12 col-sm-12">
-          <div className="panel panel-default">
-
-            <Nav
-            title="Clicky Game"
-            score={this.state.currentScore}
-            topScore={this.state.topScore}
-            rightWrong={this.state.rightWrong}
-            />
-
-            <h3>
-              Try to click on each character, but don't hit any duplicates, or
-              we'll release the hounds!!!
-            </h3>
-
-            {this.state.friends.map(friend => (
-                <FriendCard
-                  key={friend.id}
-                  handleClick={this.handleClick}
-                  handleIncrement={this.handleIncrement}
-                  handleReset={this.handleReset}
-                  handleShuffle={this.handleShuffle}
-                  id={friend.id}
-                  image={friend.image}
-                />
-            ))}
-          </div>
-      </div>
-  </div>
-  );
-}
-
-export default Card;
+export default Body;

@@ -5,7 +5,7 @@ function Wrapper(props) {
   
   return (
     <div className="container-fluid text-center">
-      <main className="wrapper" {...props} />; 
+      <main className="wrapper" {...props} />
     </div>
   );
 };
