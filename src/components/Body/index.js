@@ -70,7 +70,7 @@ class Body extends Component {
             <div className="panel panel-default">
   
               <Nav
-              title="Drag Queen Clicky Game"
+              title="Drag Queen Memory Game"
               score={this.state.currentScore}
               topScore={this.state.topScore}
               rightWrong={this.state.rightWrong}

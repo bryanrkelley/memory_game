@@ -2,7 +2,7 @@ import React from "react";
 import "./Style.css";
 
 const Nav = props => (
-  <nav>
+  <nav className="fluid">
     <ul>
       <li className="brand animated lightSpeedIn">
         <a href="/drag-react-clicky/">{props.title}</a>

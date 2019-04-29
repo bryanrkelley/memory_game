@@ -7,12 +7,12 @@ function Header() {
 
     <div className="col-sm-10">
         <div className="jumbotron">
-            <h1 className="display-4">Clicky Game</h1>
+            <h1 className="display-4">Drag Memory Game</h1>
 
 
-            <h3>
+            <h2>
                 Try to click on each character, but don't hit any duplicates, or your wig will be snatched!
-            </h3>
+            </h2>
 
             <br />
 

@@ -3,7 +3,8 @@ import "./style.css";
 
 
 const FriendCard = props => (
-  <div 
+ 
+ <div 
     className="card flex" 
     value={props.id} 
     onClick={() => props.handleClick(props.id)}

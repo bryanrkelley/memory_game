@@ -40,8 +40,8 @@ div[data-reactroot] {
   padding-top: .5vh;
 }
 
-.panel {
-  /* position: center; */
+/* .panel {
+  position: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -53,6 +53,20 @@ div[data-reactroot] {
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: .25rem;
   padding: 1rem;
+} */
+
+.panel {
+  display: flex;/*!*/
+  flex-direction: row-reverse;/* can be row but NOT column */
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  padding: 1rem;
+  flex-wrap: wrap;/*!*/
+  justify-content: center;/*!*/
 }
 
 #heading {
